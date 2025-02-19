@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 7 - Red Theme Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ff4d4d;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            width: 320px;
+            text-align: center;
+            color: white;
+            box-sizing: border-box;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .register-btn {
+            background-color: white;
+            color: #ff4d4d;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .register-btn:hover {
+            background-color: #ff1a1a;
+            color: white;
+        }
+        label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Re-enter Password" required>
+            <select required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <input type="number" placeholder="Age" required>
+            <input type="text" placeholder="Phone Number" required>
+            <input type="text" placeholder="Address" required>
+            <input type="text" placeholder="State" required>
+            <input type="text" placeholder="Country" required>
+            <input type="text" placeholder="Languages Known" required>
+            <label>
+                <input type="checkbox" required> I hereby declare
+            </label>
+            <br>
+            <button type="submit" class="register-btn">Register</button>
+        </form>
+    </div>
+</body>
+</html>
